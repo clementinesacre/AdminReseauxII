@@ -1,15 +1,15 @@
 # CONFIGURATION UFW
 printf "Installation ufw\033[1;31m"
 printf "\n"
-sudo apt-get install ufw
-sudo ufw status
+sudo apt-get install ufw // Installation
+sudo ufw status // Vérification configuration du pare-feu
 sudo ufw default deny incoming
-sudo ufw default allow outgoing
+sudo ufw default allow outgoing // Autoriser le trafic sortant suivant les règles par défaut
 printf "Finalisation étapes de base\033[1;31m"
 printf "\n"
 printf "\n"
 
-printf "Permission des ports\033[1;34m"
+printf "Permission des ports\033[1;34m" // Autorisations des connexions entrantes
 printf "\n"
 sudo ufw allow 22
 printf "SSH\033[1;32m"
@@ -45,7 +45,7 @@ sleep 1
 
 printf "Autorisation du UFW"
 printf "\n"
-sudo ufw enable
+sudo ufw enable // Autorisation ufw
 
 printf "Affichage du status UFW\033[1;36m"
 printf "\n"
